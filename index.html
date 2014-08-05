@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Changee Learning Path - CSS 從入門到精通</title>
+
+		<meta name="description" content="如何從零開始，利用網路資源訓練成為前端工程師">
+		<meta name="author" content="Mark Wu">
+    <meta property="og:title" content="Changee Learning Path - 讓網頁動起來">
+    <meta property="og:description" content="在網路的時代，我們在開始學習新領域時，可以透過 Google 找到許多學習的「資訊」，然而過多的資訊反而無法判斷什麼才是適合自己的「資源」。現有的學習資源非常豐富，但卻散落在各處，使得「自我學習」時總是花費大量時間在搜尋適合自己的資訊。因此我們希望能夠建立 Changee Learning Path「學習路徑平台」，整合資源與資訊，透過「學習分類帽」、「學習軌跡」、「實體資源」三個主要項目，建立方便自學的「學習路徑平台」。" />
+    <meta property="og:image" content="http://week4.learning-path.info/images/week4-graph.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="seo-wrapper">
+      <h1>Changee Learning Path - CSS 從入門到精通</h1>
+      <p>
+        在網路的時代，我們在開始學習新領域時，可以透過 Google 找到許多學習的「資訊」，然而過多的資訊反而無法判斷什麼才是適合自己的「資源」。現有的學習資源非常豐富，但卻散落在各處，使得「自我學習」時總是花費大量時間在搜尋適合自己的資訊。因此我們希望能夠建立 Changee Learning Path「學習路徑平台」，整合資源與資訊，透過「學習分類帽」、「學習軌跡」、「實體資源」三個主要項目，建立方便自學的「學習路徑平台」。
+      </p>
+      <img src="http://week5.learning-path.info/images/week5-graph.png">
+    </div>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section data-background="images/congruent_pentagon.png" data-background-repeat="repeat">
+						<h1>CSS 從入門到精通</h1>
+						<h3>nth-child, Pseudo-elements</h3>
+						<img src="images/learningpath.jpg">
+						<p>
+							<small><a target="_blank" href="https://www.facebook.com/changeeinfo">Changee</a> | <a target="_blank" href="http://learning-path.info">Learning Path</a></small>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>從玩遊戲中學習</h1>
+					</section>
+					<section>
+						<h2>CSS Diner</h2>
+						<p><a target="_blank" href="http://flukeout.github.io/">開始遊戲</a></p>
+					</section>
+					<section>
+						<h2>Level 1 ~ Level 8</h2>
+						<ul>
+							<li>型態選擇器 A</li>
+							<li>id 選擇器 #id</li>
+							<li>巢狀選擇器 A B</li>
+							<li>class 選擇器 .classname</li>
+							<li>兩個以上條件選擇器 A.classname</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Level 9 ~ Level 14</h2>
+						<ul>
+							<li>群組選擇器 A, B</li>
+							<li>通用選擇器 * </li>
+							<li>同層相鄰選擇器 A + B (選擇相鄰是 A 的 B)</li>
+							<li>同層全體選擇器 A ~ B (與 A 同層的所有 B)</li>
+							<li>子選擇器 A &gt; B (A 與 B 一定是要父子關係才成立)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Pseudo 偽選擇器</h2>
+						<ul>
+							<li>選擇第一個 :first-child</li>
+							<li>選擇沒有相鄰的 :only-child</li>
+							<li>選擇最後一個 :last-child</li>
+							<li>選擇第n個 :nth-child(A)</li>
+							<li>從後面數回來第n個 :nth-last-child(A)</li>
+							<li>B 的父元素的第 A 個子元素 B:nth-child(A)</li>
+							<li>B 的父元素的第 A 個 B 元素 B:nth-child(A)</li>
+						</ul>
+						<p><a target="_blank" href="http://www.w3schools.com/cssref/tryit.asp?filename=trycss3_nth-child_formula">nth 範例</a></p>
+					</section>
+					<section>
+						<h2>:not(X), :empty</h2>
+						<ul>
+							<li>:not(X) 負選擇器 （選沒有X的元素）</li>
+							<li>:empty 選擇沒有子元素的元素</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Before, After</h1>
+					</section>
+					<section>
+						<h2>做一朵雲</h2>
+						<p><a target="_blank" href="http://thecodeplayer.com/walkthrough/make-a-simple-cloud-in-css3">Make a simple cloud in CSS3</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>畫三角形</h1>
+						<p data-height="352" data-theme-id="0" data-slug-hash="dEbCk" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/dEbCk/'>Animation to Explain CSS Triangles</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+						<script async src="//codepen.io/assets/embed/ei.js"></script>
+					</section>
+					<section>
+						<h2>調整 Border 就能得到不同比例的三角形</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/qepah/1/embed?html,css,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+					</section>
+				</section>
+				
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h1>實務應用</h1>
+					</section>
+					<section>
+						<h2>斑馬紋設定表格</h2>
+						<p><a href="http://csscoke.com/2013/09/21/%E4%BD%BF%E7%94%A8css3-nth-childn-%E9%81%B8%E5%8F%96%E5%99%A8%E8%A9%B3%E8%A7%A3/">使用CSS3 :nth-child(n) 選取器教學</a></p>
+						<p>來源：<a target="_blank" href="http://csscoke.com/">csscoke.com</a></p>
+					</section>
+					<section>
+						<h2>nth 測試</h2>
+						<p data-height="465" data-theme-id="0" data-slug-hash="ytCuq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/paulmaloney/pen/ytCuq/'>nth-child Tester</a> by Paul Maloney (<a href='http://codepen.io/paulmaloney'>@paulmaloney</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+					</section>
+				</section>
+				<section>
+					<h1>Q&A</h1>
+					<h2><a target="_blank" href="https://www.facebook.com/groups/changee.learningpath/">Facebook 社團</a></h2>
+				</section>
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-51808149-1', 'week1.learning-path.info', {
+            'cookieDomain': 'none'
+        });
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+	</body>
+</html>
